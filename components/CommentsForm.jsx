@@ -55,12 +55,12 @@ const CommentsForm = ({ slug }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4">Leave a Comment</h3>
+    <div className="bg-darkmode shadow-lg rounded-lg p-8 pb-12 mb-8">
+      <h3 className="text-xl mb-8 font-semibold border-b pb-4 text-white techfont">Leave a Comment</h3>
       <div className="grid grid-cols-1 gap-4 mb-4 ">
         <textarea
           ref={commentEl}
-          className="p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-600 bg-comments text-gray-200"
           placeholder="Comment"
           name="Comment"
         />
@@ -69,14 +69,14 @@ const CommentsForm = ({ slug }) => {
         <input
           type="text"
           ref={nameEl}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-600 bg-comments text-gray-200"
           placeholder="Name"
           name="Name"
         />
         <input
           type="text"
           ref={emailEl}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-600 bg-comments text-gray-200"
           placeholder="Email"
           name="Email"
         />
@@ -85,17 +85,17 @@ const CommentsForm = ({ slug }) => {
       <div className="grid grid-cols-1 gap-4 mb-4 "> 
       <div className="container">
         <input ref={storeDataEl} type="checkbox" id="storeData" name="storeData" value="true"/>
-        <label className="text-gray-500 cursor-pointer ml-2" htmlFor="storeData">Save my email and name for the next time</label>
+        <label className="text-white cursor-pointer ml-2 techfont " htmlFor="storeData">Save my email and name for the next time</label>
       </div>
       </div>
         {error && (
-          <p className="text-xs text-red-500">All fields are required</p>
+          <p className="text-xs  techfont text-white">All fields are required</p>
         )}
         <div className="mt-8">
           <button
             type="button"
             onClick={handleCommentSubmission}
-            className="transition duration-500 ease hover:bg-indigo-600 inline-block bg-pink-600 text-lg rounded-full text-white px-8 py-3 cursor-pointer"
+            className="transition duration-500 ease hover:bg-indigo-600 inline-block bg-pink-600 text-lg rounded-full text-white px-8 py-3 cursor-pointer techfont"
           >
             Post Comment
           </button>

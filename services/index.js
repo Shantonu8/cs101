@@ -1,6 +1,6 @@
 import { request, gql } from 'graphql-request';
 
-const graphqlAPI = process.env.NEXT_PUBLIC_TEENBLOG_ENDPOINT;
+const graphqlAPI = process.env.NEXT_PUBLIC_CS_ENDPOINT;
 
 export const getPosts = async () => {
   const query = gql`

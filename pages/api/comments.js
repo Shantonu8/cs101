@@ -1,8 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { GraphQLClient, gql } from "graphql-request";
 
-const graphqlAPI = process.env.NEXT_PUBLIC_TEENBLOG_ENDPOINT;
-const graphcmsToken = process.env.TEENBLOG_TOKEN
+const graphqlAPI = process.env.NEXT_PUBLIC_CS_ENDPOINT;
+const graphcmsToken = process.env.CS_TOKEN
 
 
 export default async function comments(req, res) {
