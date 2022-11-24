@@ -36,7 +36,6 @@ const PostWidget = ({ categories, slug }) => {
             </div>
             <div className="flex-grow ml-4 techfont text-white">
               <p className=" font-xs techfont text-white">
-                {moment(post.createdAt).format("MMM DD, YYYY")}
               </p>
               <span className="text-lg techfont text-white transition duration-200 hover:text-pink-600">
                 <Link
